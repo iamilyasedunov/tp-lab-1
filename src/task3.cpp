@@ -1,20 +1,20 @@
 #include <task1.h>
-unsigned long nod(unsigned int a,unsigned b)
-{
-	    if (b==0) return a;
-	        else return nod(b,a%b);
-}
+#include <vector>
 
-unsigned long nok(unsigned int n1, unsigned n2)
-{
-	    return n1*n2 / nod(n1, n2);
-}
-
-
-unsigned long findValue(unsigned int min,unsigned max){
-	    unsigned int s = min, dev;
-	    for(;min<max;min++){
-		    s = nok(s, min);
-	    }
-	    return s;
+unsigned long long sumPrime(unsigned int hbound){
+    vector <char> a;
+    unsigned long long  len = hbound, s = 0;
+    for (unsigned long long i = 0; i < len + 1; i++)
+        a.push_back(true);
+    a[0] = a[1] = false;
+    for (unsigned long long p = 2; p < len + 1; p++)
+    {
+        if (a[p])
+        {
+            s = s + p;
+            for (unsigned long long j = p*p; j < len + 1; j += p)
+                a[j] = 0;
+        }
+    }
+    return s;
 }

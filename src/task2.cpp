@@ -1,20 +1,57 @@
-#include <task1.h>
-unsigned long nod(unsigned int a,unsigned b)
-{
-	    if (b==0) return a;
-	        else return nod(b,a%b);
-}
-
-unsigned long nok(unsigned int n1, unsigned n2)
-{
-	    return n1*n2 / nod(n1, n2);
-}
+#include <task2.h>
+#include <vector>
+#include <math.h>
 
 
-unsigned long findValue(unsigned int min,unsigned max){
-	    unsigned int s = min, dev;
-	    for(;min<max;min++){
-		    s = nok(s, min);
-	    }
-	    return s;
+bool checkPrime(unsigned int n) {
+    unsigned int a;
+    if (n == 2) return true;
+    for (a = 2; a <= sqrt(n); a++) {
+        if ( n % a == 0 ) break;
+    }
+    return (n % a != 0 && n != a);
 }
+
+unsigned long long nPrime(unsigned n){
+    vector <char> a;
+    unsigned long long  len = 2000001, primeC = 0;
+
+    for (unsigned long long i = 0; i < len + 1; i++)
+        a.push_back(true);
+
+    a[1]=a[0]=false;
+
+    for (unsigned long long p = 2; p < len + 1; p++)
+    {
+        if (a[p])
+        {
+            if (primeC == n - 1){
+                return p;
+            }
+            primeC++;
+            for (unsigned long long j = p*p; j < len + 1; j += p)
+                a[j] = 0;
+        }
+    }
+}
+
+unsigned long long nextPrime(unsigned long long value){
+    vector <char> a, simple;
+
+    unsigned long long  len = 2000001;
+    for (unsigned long long i = 0; i < len + 1; i++)
+        a.push_back(true);
+
+    a[0]=a[1]=false;
+
+    for (unsigned long long p = 2; p < len + 1; p++)
+    {
+        if (a[p])
+        {
+            if (p > value){
+                return p;
+            }
+            for (unsigned long long j = p*p; j < len + 1; j += p)
+                a[j] = 0;
+        }
+    }

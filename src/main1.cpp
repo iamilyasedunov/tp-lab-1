@@ -1,7 +1,9 @@
 #include <task1.h>
 #include <iostream>
 int main(){
-	std::cout<<findvalue(1,20)<<" ";
-	std::cout<<findValue(1,10)<<" ";
+	unsigned min,max;
+	std::cout<<"Enter the boundaries of the search range: "
+	std::cin>>min>>max;
+	std::cout<<findvalue(min, max);
 	return 0;
 }
