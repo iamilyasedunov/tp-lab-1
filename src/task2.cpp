@@ -55,3 +55,4 @@ unsigned long long nextPrime(unsigned long long value){
                 a[j] = 0;
         }
     }
+}
