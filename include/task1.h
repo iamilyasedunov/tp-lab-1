@@ -1,3 +1,5 @@
+#include <iostream>
+
 
 unsigned long nod(unsigned int a,unsigned b);
 

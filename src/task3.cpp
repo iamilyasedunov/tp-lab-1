@@ -1,5 +1,5 @@
-#include <task1.h>
-#include <vector>
+#include <task2.h>
+#include <task3.h>
 
 unsigned long long sumPrime(unsigned int hbound){
     vector <char> a;

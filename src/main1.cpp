@@ -1,5 +1,5 @@
 #include <task1.h>
-#include <iostream>
+
 int main(){
 	unsigned min,max;
 	std::cout<<"Enter the boundaries of the search range: "

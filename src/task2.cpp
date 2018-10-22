@@ -1,6 +1,5 @@
 #include <task2.h>
-#include <vector>
-#include <math.h>
+
 
 
 bool checkPrime(unsigned int n) {
