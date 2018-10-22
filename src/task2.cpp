@@ -12,7 +12,7 @@ bool checkPrime(unsigned int n) {
 }
 
 unsigned long long nPrime(unsigned n){
-    std::vector <char> a;
+    vector <char> a;
     unsigned long long  len = 2000001, primeC = 0;
 
     for (unsigned long long i = 0; i < len + 1; i++)

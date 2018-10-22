@@ -4,7 +4,7 @@
 #include <vector>
 #include <math.h>
 
-//using namespace std;
+using namespace std;
 
 bool checkPrime(unsigned int value);
 
