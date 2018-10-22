@@ -9,7 +9,7 @@ int main()
     char *z = sum(x ,y);
 
     for(int i = 0; i < strlen(z); i++){
-        cout<<z[i]<<" ";
+        cout<<z[i];
     }
     
     return 0;
