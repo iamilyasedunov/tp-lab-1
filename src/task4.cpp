@@ -44,5 +44,7 @@ char * sum(char *x, char *y){
         z[i] = z1[i];
         //cout<<z[i]<<" ";
     }
+	
+	
     return z;
 }
