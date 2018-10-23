@@ -13,7 +13,6 @@ int main(){
 	cin>>n;
 	cout<<" "<<nPrime(n)<<endl;
 	
-	unsigned int value; //нахождение ближайшего следующего простого числа к value.
 	cout<<"Enter value: ";
 	cin>>value;
 	cout<<" "<<nextPrime(value)<<endl;
