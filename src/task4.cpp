@@ -30,7 +30,7 @@ char * sum(char *x, char *y){
         sum = xx + yy + stock;
         z1.push_back(char(sum%10 + 48));
         stock = sum/10;
-        //cout<<x1[i]<<" "<<y1[i]<<" "<<z1[i]<<" "<<endl;
+        //cout<<char(x1[i])<<" "<<char(y1[i])<<" "<<z1[i]<<" "<<endl;
     }
     if (stock != 0){
         z1.push_back(char(stock + 48));
@@ -44,5 +44,6 @@ char * sum(char *x, char *y){
         z[i] = z1[i];
         //cout<<z[i];
     }
+    z[m] = '\0';
     return z;
 }
