@@ -3,12 +3,12 @@
 
 int main(){
 
-	unsigned int value; //проверка числа на простоту
+	unsigned int value; 
 	cout<<"Enter value: ";
 	cin>>value;
 	cout<<" "<<checkPrime(value)<<endl;
 	
-	unsigned n; //нахождение n-ого простого числа (в ряду)
+	unsigned n;
 	cout<<"Enter n: ";
 	cin>>n;
 	cout<<" "<<nPrime(n)<<endl;

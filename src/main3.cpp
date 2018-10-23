@@ -4,7 +4,7 @@
 
 int main(){
 	
-	unsigned int hbound; //сумма всех чисел до hbound (не включая его)
+	unsigned int hbound; 
 	cout<<"Enter hbound: ";
 	cin>>hbound;
 	cout<<" "<<sumPrime(hbound)<<endl;

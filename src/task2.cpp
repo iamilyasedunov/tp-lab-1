@@ -19,7 +19,8 @@ unsigned long long nPrime(unsigned n){
         a.push_back(true);
 
     a[1]=a[0]=false;
-
+	
+	//using the Eratosthenes sieve, we find the n-th Prime
     for (unsigned long long p = 2; p < len + 1; p++)
     {
         if (a[p])
@@ -42,7 +43,9 @@ unsigned long long nextPrime(unsigned long long value){
         a.push_back(true);
 
     a[0]=a[1]=false;
-
+	
+	//using the sieve of Eratosthenes, we find the following p
+	
     for (unsigned long long p = 2; p < len + 1; p++)
     {
         if (a[p])
