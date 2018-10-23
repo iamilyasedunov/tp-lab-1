@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main(){
-	/*
+
 	unsigned int value; //проверка числа на простоту
 	cout<<"Enter value: ";
 	cin>>value;
@@ -18,5 +18,5 @@ int main(){
 	cin>>value;
 	cout<<" "<<nextPrime(value)<<endl;
 	return 0;
-	*/
+	
 }

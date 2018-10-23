@@ -5,9 +5,9 @@
 int main(){
 	
 	unsigned int hbound; //сумма всех чисел до hbound (не включая его)
-	std::cout<<"Enter hbound: ";
-	std::cin>>hbound;
-	std::cout<<" "<<sumPrime(hbound)<<endl;
+	cout<<"Enter hbound: ";
+	cin>>hbound;
+	cout<<" "<<sumPrime(hbound)<<endl;
 	
 	return 0;
 }
