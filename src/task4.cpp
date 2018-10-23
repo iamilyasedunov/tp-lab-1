@@ -38,13 +38,12 @@ char * sum(char *x, char *y){
             //cout<<"    "<<z1[i + 1]<<endl;
         }
     }
-    char *z = (char *) malloc(sizeof(char)*(z1.size())) - 2;
     reverse(z1.begin(), z1.end());
+    char *z = (char *) malloc(sizeof(char)*z1.size()) - 2;
     for (int i = 0; i < z1.size(); i++){
         z[i] = z1[i];
         //cout<<z[i]<<" ";
     }
-	
-	
+
     return z;
 }

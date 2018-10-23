@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+using namespace std;
 
 unsigned long nod(unsigned int a,unsigned b);
 
