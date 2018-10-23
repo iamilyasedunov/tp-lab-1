@@ -2,9 +2,7 @@
 
 char * sum(char *x, char *y){
 
-
     vector <char> x1,y1,z1;
-
 
     for (int i = strlen(x) - 1;i > - 1;i--){
         x1.push_back(x[i]);
